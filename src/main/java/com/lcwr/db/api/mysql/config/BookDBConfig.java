@@ -31,7 +31,7 @@ public class BookDBConfig {
     @Bean(name = "bookDataSource")
     @ConfigurationProperties(prefix = "spring.book.datasource")
     public DataSource dataSource() {
-        // Step 2: Configure the primary data source for the Book database
+
         return DataSourceBuilder.create().build();
     }
 
